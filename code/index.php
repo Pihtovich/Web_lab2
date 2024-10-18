@@ -217,3 +217,15 @@ function digitSum(int $number): void {
 }
 digitSum(777);
 
+/** Arrays */
+// func 1
+function fillArray(string $str, int $number): array
+{
+    $arr = [];
+    for ($i = 1; $i <= $number; $i++) {
+        $arr[$i] = str_repeat($str, $i);
+    }
+    return $arr;
+}
+foreach (fillArray("x", 6) as $value) echo "\n$value";
+
