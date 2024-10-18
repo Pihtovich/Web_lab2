@@ -31,7 +31,7 @@ message;
 echo "\n$intVariable";
 echo "\n";
 echo $floatVariable;
-echo "\n$intVariable * $floatVariable"; // output = 12
+echo "\n, $intVariable * $floatVariable"; // output = 12
 echo "\n$message";
 
 /** Multiplication and division */
@@ -322,7 +322,7 @@ function triangle(int $number): void {
         echo "\n", $str;
     }
 }
-triangle( 20);
+triangle(20);
 
 /** Combination of functions */
 // task 1
