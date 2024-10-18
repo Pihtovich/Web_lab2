@@ -248,3 +248,21 @@ function array2DSum(array $arr2D): int
 }
 echo "\nСумма элементов array([1, 2, 3],[4, 5],[6]) равна", array2DSum($array);
 
+
+// Other
+$array = [2, 5, 3, 9];
+$result = $array[0] * $array[1] + $array[2] * $array[3];
+
+echo "\n$result";
+$user = ["name" => "Арсений", "surname" => "Соколов", "patronymic" => "Павлович"];
+
+echo "\nРаботу выполнил ", $user["surname"], " ", $user["name"], " ", $user["patronymic"];
+$date = ["year" => "2024", "month" => "03", "day" => "01"];
+echo " [", $date["year"], "-", $date["month"], "-", $date["day"], "]";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo "\nДан массив ['a', 'b', 'c', 'd', 'e']";
+echo "\nКоличество элементов в массиве: ", count($arr);
+echo "\nПоследний элемент в массиве: ", end($arr);
+echo "\nПредпоследний элемент в массиве: ", $arr[count($arr)-2];
+
