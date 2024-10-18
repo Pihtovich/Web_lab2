@@ -288,11 +288,14 @@ function checkEqual($num1, $num2): bool {
     }
 }
 $result = checkEqual(8,8);
-echo "\n";
+
+
 // Other
 $test = 7;
+
 if ($test == 0) echo 'верно'; // shortened version
 $age = 42;
+
 if ($age < 10 || $age > 99) {
     echo "\nЧисло $age не попадает в указанный диапазон";
 }
@@ -310,3 +313,13 @@ if (count($arr) == 3) {
     echo "\nСумма элементов массива: $sum";
 }
 
+
+/** Cycles */
+function triangle(int $number): void {
+    $str = "";
+    for ($i = 1; $i <= $number; $i++) {
+        $str .= "X";
+        echo "\n", $str;
+    }
+}
+triangle( 20);
